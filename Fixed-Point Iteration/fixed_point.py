@@ -1,6 +1,6 @@
 import numpy as np
 
-def cached_punto_fijo(g, P0, TOL, No):
+def cached_fixed_point(g, P0, TOL, No):
     i = 1
     P0 = P0
     cache = []
@@ -13,5 +13,5 @@ def cached_punto_fijo(g, P0, TOL, No):
         i += 1
         
 
-    return "El método falló después de No iteraciones, No ={}".format(str(No)),cache
+    return "The method failed after N0 iterations, N0 = {}".format(str(No)),cache
 

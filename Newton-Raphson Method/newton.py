@@ -10,11 +10,11 @@ def newton(f, df, p0, TOL, N0):
         p0 = p
         i += 1
 
-    return "El método falló despues de N0 iteraciones, N0 = {}".format(str(N0))
+    return "The method failed after N0 iterations, N0 = {}".format(str(N0))
 
 def newton_cached(f, df, p0, TOL, N0):
-    print("Aproximacion inicial p0 = ", p0)
-    print("Numero de iteraciones N0 = ", N0)
+    print("Initial Approximation p0 = ", p0)
+    print("Number of Iterations N0 = ", N0)
     p0 = p0
     i = 1
     cache = []
@@ -26,5 +26,5 @@ def newton_cached(f, df, p0, TOL, N0):
         p0 = p
         i += 1
 
-    return "El método falló despues de N0 iteraciones, N0 = {}".format(str(N0)), cache
+    return "The method failed after N0 iterations, N0 = {}".format(str(N0)), cache
   

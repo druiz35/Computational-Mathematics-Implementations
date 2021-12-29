@@ -1,6 +1,6 @@
 import numpy as np
 
-def punto_falso(f, p0, p1, TOL, N0):
+def regula_falsi(f, p0, p1, TOL, N0):
     p0 = p0
     p1 = p1
     q0 = f(p0)
@@ -17,4 +17,4 @@ def punto_falso(f, p0, p1, TOL, N0):
             q0 = q1
         p1 = p
         q1 = q
-    return "El método falló después de N0 iteraciones, N0 = {}".format(str(N0))
+    return "The method failed after N0 iterations, N0 = {}".format(str(N0))
